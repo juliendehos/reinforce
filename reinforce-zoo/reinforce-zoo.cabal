@@ -44,6 +44,20 @@ executable qtable-cartpole-example
     , reinforce-algorithms ==0.0.1.0
     , reinforce-environments-gym ==0.0.1.0
 
+executable qtable-cartpole-gloss-example
+  main-is: QTable.hs
+  hs-source-dirs: examples/cartpole-gloss
+  default-language: Haskell2010
+  ghc-options: -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates
+  build-depends:
+      base 
+    , dlist
+    , gloss
+    , reinforce
+    , reinforce-algorithms
+    , reinforce-environments
+    , reinforce-environments-gym
+
 executable qtable-frozenlake-example
   main-is: QTable.hs
   hs-source-dirs: examples/frozenlake

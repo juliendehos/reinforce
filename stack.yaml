@@ -14,3 +14,7 @@ packages:
 
 # extra-include-dirs:
 # - /usr/local/include/
+
+nix:
+  packages: [ libGL libGLU freeglut ]
+
